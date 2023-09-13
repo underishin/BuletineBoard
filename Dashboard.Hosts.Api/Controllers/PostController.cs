@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Dashboard.Hosts.Api.Controllers
 {
+    int a;
     ///<summary>    
     ///Контроллер для работы с обЪявлениями
     /// </summary>
