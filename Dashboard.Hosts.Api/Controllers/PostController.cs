@@ -11,17 +11,16 @@ namespace Dashboard.Hosts.Api.Controllers
     ///<summary>    
     ///Контроллер для работы с обЪявлениями
     /// </summary>
+    /// [ApiController]
+    [Route("post")]
     public class PostController : ControllerBase
     {
-        int a;
-        //gg
-        //hh
         /// <summary>
-        /// Возращает объявление по индетификатору
+        /// Возвращает объявление по идентификатору.
         /// </summary>
-        /// <param name="id"> Индетификатор объявления</param>
-        /// <param name="cancellationToken">Отмена операции</param>
-        /// <returns>Модель объявления<see cref="PostDto"></returns>
+        /// <param name="id">Идентификатор объявления.</param>
+        /// <param name="cancellationToken">Отмена операции.</param>
+        /// <returns>Модель объявления <see cref="PostDto"/></returns>
         [HttpGet("get-by-id")]
         public async Task<IActionResult> GetByIdAsync(Guid id, CancellationToken cancellationToken)
         {
@@ -30,12 +29,12 @@ namespace Dashboard.Hosts.Api.Controllers
         /// <summary>
         /// Возращает постраничные объявления
         /// </summary>
-        /// <param name="cancellationTokenint">Отмена операции</param>
+        /// <param name="cancellationToken">Отмена операции</param>
         /// <param name="pageSize">Размер страницы</param>
         /// <param name="pageIndex">Номер страницы</param>
-        /// <returns>Колекция объявлений<see cref="PostDto"></returns>
+        /// <returns>Колекция объявлений<see cref="PostDto"/></returns>
         [HttpGet("get-all-paged")]
-        public async Task<IActionResult> GetAllAsync( CancellationToken cancellationTokenint, int pageSize = 10, int pageIndex = 0)
+        public async Task<IActionResult> GetAllAsync( CancellationToken cancellationToken, int pageSize = 10, int pageIndex = 0)
         {
             return Ok();
         }
@@ -59,7 +58,7 @@ namespace Dashboard.Hosts.Api.Controllers
             return Ok();
         }
         /// <summary>
-        /// Удалаяет объявление по индетификатору
+        /// Удаляет объявление по индетификатору
         /// </summary>
         /// <param name="id">Индетификатор объявления</param>
         /// <param name="cancellationToken">Отмена операции</param>

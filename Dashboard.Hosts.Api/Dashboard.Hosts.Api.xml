@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dashboard.Hosts.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Dashboard.Hosts.Api.Controllers.PostController">
+            <summary>    
+            Контроллер для работы с обЪявлениями
+             </summary>
+             [ApiController]
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.GetByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Возвращает объявление по идентификатору.
+            </summary>
+            <param name="id">Идентификатор объявления.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+            <returns>Модель объявления <see cref="T:Dashboard.Contracts.Post.PostDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
+            <summary>
+            Возращает постраничные объявления
+            </summary>
+            <param name="cancellationToken">Отмена операции</param>
+            <param name="pageSize">Размер страницы</param>
+            <param name="pageIndex">Номер страницы</param>
+            <returns>Колекция объявлений<see cref="T:Dashboard.Contracts.Post.PostDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.CreateAsync(Dashboard.Contracts.Post.PostDto,System.Threading.CancellationToken)">
+            <summary>
+            Создает объявление
+            </summary>
+            <param name="cancellationToken">Отмена операции</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.UpdateAsync(Dashboard.Contracts.Post.PostDto,System.Threading.CancellationToken)">
+            <summary>
+            Редактирует объявление
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.DeleteAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Удаляет объявление по индетификатору
+            </summary>
+            <param name="id">Индетификатор объявления</param>
+            <param name="cancellationToken">Отмена операции</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
