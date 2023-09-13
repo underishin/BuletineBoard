@@ -7,13 +7,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Dashboard.Hosts.Api.Controllers
 {
-    int a;
-    //gg
+
     ///<summary>    
     ///Контроллер для работы с обЪявлениями
     /// </summary>
     public class PostController : ControllerBase
     {
+        int a;
+        //gg
+        //hh
         /// <summary>
         /// Возращает объявление по индетификатору
         /// </summary>
