@@ -28,7 +28,7 @@ namespace Dashboard.Contracts.Post
         ///<summary>
         ///Имена тегов товаров
         /// </summary>
-        public string TagNames { get; set; }
+        public string[] TagNames { get; set; }
         /// <summary>
         /// Цена
         /// </summary>

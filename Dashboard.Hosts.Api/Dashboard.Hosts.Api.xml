@@ -8,7 +8,12 @@
             <summary>    
             Контроллер для работы с обЪявлениями
              </summary>
-             [ApiController]
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.#ctor(Dashboard.Application.AppServices.Contexts.Post.Services.iPostService)">
+            <summary>
+            Инициализирует экзепляр <see cref="T:Dashboard.Hosts.Api.Controllers.PostController"/>
+            </summary>
+            <param name="postService">Сервис работы с объявлениями.</param>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.PostController.GetByIdAsync(System.Guid,System.Threading.CancellationToken)">
             <summary>

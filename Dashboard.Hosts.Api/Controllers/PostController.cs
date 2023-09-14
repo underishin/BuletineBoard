@@ -4,6 +4,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using Dashboard.Contracts.Post;
 using Microsoft.AspNetCore.Mvc;
+using Dashboard.Application.AppServices.Contexts.Post;
+using Dashboard.Application.AppServices.Contexts.Post.Services;
 
 namespace Dashboard.Hosts.Api.Controllers
 {
@@ -11,10 +13,22 @@ namespace Dashboard.Hosts.Api.Controllers
     ///<summary>    
     ///Контроллер для работы с обЪявлениями
     /// </summary>
-    /// [ApiController]
+    [ApiController]
     [Route("post")]
     public class PostController : ControllerBase
-    {
+    { 
+        private readonly iPostService _postService;
+
+        /// <summary>
+        /// Инициализирует экзепляр <see cref="PostController"/>
+        /// </summary>
+        /// <param name="postService">Сервис работы с объявлениями.</param>
+        public PostController(iPostService postService)
+        {
+            _postService = postService;
+        }
+
+
         /// <summary>
         /// Возвращает объявление по идентификатору.
         /// </summary>
@@ -22,9 +36,13 @@ namespace Dashboard.Hosts.Api.Controllers
         /// <param name="cancellationToken">Отмена операции.</param>
         /// <returns>Модель объявления <see cref="PostDto"/></returns>
         [HttpGet("get-by-id")]
+        [ProducesResponseType(typeof(PostDto), (int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         public async Task<IActionResult> GetByIdAsync(Guid id, CancellationToken cancellationToken)
         {
-            return Ok();
+            var result = await _postService.GetByIdAsync(id, cancellationToken);
+            return Ok(result);
         }
         /// <summary>
         /// Возращает постраничные объявления

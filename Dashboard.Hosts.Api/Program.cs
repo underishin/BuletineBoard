@@ -1,5 +1,8 @@
+using Dashboard.Application.AppServices.Contexts.Post.Repositories;
+using Dashboard.Application.AppServices.Contexts.Post.Services;
 using Dashboard.Contracts.Post;
 using Dashboard.Hosts.Api.Controllers;
+using Dashboard.Infrastructure.DataAccess.Contexts.Post.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +28,8 @@ builder.Services.AddSwaggerGen(s =>
             s.IncludeXmlComments(xmlPath);
     }
 });
-
+builder.Services.AddTransient<iPostService,PostService>();
+builder.Services.AddTransient<iPostRepository, PostRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
