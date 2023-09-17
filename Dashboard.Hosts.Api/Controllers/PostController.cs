@@ -11,7 +11,7 @@ namespace Dashboard.Hosts.Api.Controllers
 {
 
     ///<summary>    
-    ///Контроллер для работы с обЪявлениями
+    ///Контроллер для работы с объявлениями
     /// </summary>
     [ApiController]
     [Route("post")]
@@ -27,7 +27,6 @@ namespace Dashboard.Hosts.Api.Controllers
         {
             _postService = postService;
         }
-
 
         /// <summary>
         /// Возвращает объявление по идентификатору.
@@ -50,7 +49,7 @@ namespace Dashboard.Hosts.Api.Controllers
         /// <param name="cancellationToken">Отмена операции</param>
         /// <param name="pageSize">Размер страницы</param>
         /// <param name="pageIndex">Номер страницы</param>
-        /// <returns>Колекция объявлений<see cref="PostDto"/></returns>
+        /// <returns>Коллекция объявлений<see cref="PostDto"/></returns>
         [HttpGet("get-all-paged")]
         public async Task<IActionResult> GetAllAsync( CancellationToken cancellationToken, int pageSize = 10, int pageIndex = 0)
         {

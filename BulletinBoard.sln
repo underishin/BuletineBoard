@@ -25,17 +25,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.Hosts.Api", "Dash
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.Domain", "Dashboard.Domain\Dashboard.Domain.csproj", "{5E575A63-40E5-4FFC-8AD7-CF66368A790C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.Contract", "Dashboard.Contracts\Dashboard.Contract.csproj", "{F6DE4371-ECC4-4917-B66C-CFA15D193FD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.Contract", "Dashboard.Contracts\Dashboard.Contract.csproj", "{F6DE4371-ECC4-4917-B66C-CFA15D193FD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dushboard.Clients", "Dushboard.Clients\Dushboard.Clients.csproj", "{40D508D8-E3FA-4DCD-BFCD-B50C0C4BCED8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dushboard.Clients", "Dushboard.Clients\Dushboard.Clients.csproj", "{40D508D8-E3FA-4DCD-BFCD-B50C0C4BCED8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.Application.AppServices", "Dashboard.Application.AppServices\Dashboard.Application.AppServices.csproj", "{8D2EE025-3353-4B98-BCEE-34365E159986}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.Application.AppServices", "Dashboard.Application.AppServices\Dashboard.Application.AppServices.csproj", "{8D2EE025-3353-4B98-BCEE-34365E159986}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.Infrastructure", "Dashboard.Infrastructure\Dashboard.Infrastructure.csproj", "{E154E415-6924-4610-BA4E-AEF3B14957B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.Infrastructure", "Dashboard.Infrastructure\Dashboard.Infrastructure.csproj", "{E154E415-6924-4610-BA4E-AEF3B14957B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.Infrastructure.DataAccess", "Dashboard.Infrastructure.DataAccess\Dashboard.Infrastructure.DataAccess.csproj", "{965EA432-B9E0-49F1-99AB-D0F2CC4C996D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.Infrastructure.DataAccess", "Dashboard.Infrastructure.DataAccess\Dashboard.Infrastructure.DataAccess.csproj", "{965EA432-B9E0-49F1-99AB-D0F2CC4C996D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.Infrastructure.Registrar", "Dashboard.Infrastructure.Registrar\Dashboard.Infrastructure.Registrar.csproj", "{67639E04-E39E-47D0-B17E-3A7303263591}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.Infrastructure.Registrar", "Dashboard.Infrastructure.Registrar\Dashboard.Infrastructure.Registrar.csproj", "{67639E04-E39E-47D0-B17E-3A7303263591}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Dashboard.Contract.Attachment;
 using Dashboard.Contracts.Base;
 
 namespace Dashboard.Contracts.Post
@@ -21,6 +22,10 @@ namespace Dashboard.Contracts.Post
         /// Описание
         /// </summary>
         public string Description { get; set; }
+        /// <summary>
+        /// Изображения
+        /// </summary>
+        public IReadOnlyCollection<AttachmentDto> Attachment { get; set;}
         ///<summary>
         ///Имена категории товаров
         /// </summary>
@@ -33,6 +38,10 @@ namespace Dashboard.Contracts.Post
         /// Цена
         /// </summary>
         public decimal Price { get; set; }
+        /// <summary>
+        /// Номер телефона
+        /// </summary>
+        public string PhoneNumber { get; set; }
 
     }
 }

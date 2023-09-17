@@ -29,6 +29,11 @@
             Описание
             </summary>
         </member>
+        <member name="P:Dashboard.Contracts.Post.PostDto.Attachment">
+            <summary>
+            Изображения
+            </summary>
+        </member>
         <member name="P:Dashboard.Contracts.Post.PostDto.CategoryNames">
             <summary>
             Имена категории товаров
@@ -42,6 +47,11 @@
         <member name="P:Dashboard.Contracts.Post.PostDto.Price">
             <summary>
             Цена
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Post.PostDto.PhoneNumber">
+            <summary>
+            Номер телефона
             </summary>
         </member>
     </members>
