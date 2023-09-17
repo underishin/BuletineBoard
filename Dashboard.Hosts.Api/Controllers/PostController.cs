@@ -40,8 +40,13 @@ namespace Dashboard.Hosts.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         public async Task<IActionResult> GetByIdAsync(Guid id, CancellationToken cancellationToken)
         {
+            
             var result = await _postService.GetByIdAsync(id, cancellationToken);
-            return Ok(result);
+            if (result == null)
+            {
+                return NotFound();
+            }
+                return Ok(result);
         }
         /// <summary>
         /// Возращает постраничные объявления
